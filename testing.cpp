@@ -31,7 +31,7 @@ int main() {
     std::cout << "Call Price: $" << callPr << "\n";
     std::cout << "Put Price: $" << putPr << "\n\n";
     
-    // Verify put-call parity: C - P = S - K*e^(-rT)
+    
     double putCallParity = callPr - putPr;
     double theoreticalParity = S - K * exp(-r * T);
     std::cout << "Put-Call Parity Check:\n";
